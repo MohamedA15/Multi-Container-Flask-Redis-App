@@ -1,0 +1,32 @@
+# Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+env/
+venv/
+*.env
+
+# macOS system files
+.DS_Store
+
+# Logs
+*.log
+
+# Docker files you might want to ignore
+docker-compose.override.yml
+*.pid
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# Redis persistence files (if any local)
+dump.rdb
+appendonly.aof
+
+# Bytecode and distribution folders
+build/
+dist/
+*.egg-info/
