@@ -1,21 +1,16 @@
-version: '3.8'
+version: "3.9"
+
 services:
   web:
     build: .
+    container_name: flask-redis-app-web
     ports:
       - "5001:5001"
     depends_on:
       - redis
 
   redis:
-    image: redis:latest
+    image: "redis:alpine"
+    container_name: flask-redis-app-redis
     ports:
       - "6379:6379"
-    volumes:
-      - redis-data:/data
-
-
-volumes:
-  redis-data:
-
-
