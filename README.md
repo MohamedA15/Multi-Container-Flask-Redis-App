@@ -30,11 +30,13 @@ git clone https://github.com/MohamedA15/Multi-Container-Flask-Redis-App.git
 cd Multi-Container-Flask-Redis-App
 
 .
-├── app.py                  # Main Flask application
+├── app.py                  # Main Flask web app (backend logic)
+├── templates/              # Folder for HTML templates
+│   └── index.html          # Main page template for the counter
 ├── Dockerfile              # Dockerfile for Flask app
-├── docker-compose.yml      # Docker Compose configuration
+├── docker-compose.yml      # Docker Compose configuration (Flask + Redis)
 ├── requirements.txt        # Python dependencies
-├── .gitignore              # Files and folders to ignore
+├── .gitignore              # Files and folders to ignore in Git
 └── README.md               # Project documentation
 
 Usage
